@@ -6,8 +6,7 @@
 // @author       Vulca, benneb & now The Stubbs
 // @license      MIT
 // @match        https://*.ogame.gameforge.com/game/*
-// @match        *127.0.0.1*/bots/*/browser/html/*
-// @match        *.ogame.ninja/bots/*/browser/html/*
+// @match        *://*/bots/*/browser/html/*
 // @updateURL    https://openuserjs.org/meta/The_Stubbs/InfoCompte.meta.js
 // @downloadURL  https://openuserjs.org/install/The_Stubbs/InfoCompte.user.js
 // @grant        GM_addStyle
@@ -5169,7 +5168,7 @@ var Exports = {
   setEvents: setEvents$3
 };
 
-const root = `https://${ window.location.host }/game/index.php?`;
+const root = `${window.location.protocol}//${window.location.host}${window.location.pathname}?`;
 
 function getHTML$5(data) {
   const { positions } = data.player;
