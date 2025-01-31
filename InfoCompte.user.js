@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         InfoCompte Ninja
 // @namespace    https://openuserjs.org/users/The_Stubbs
-// @version      11.1.4
+// @version      12.0.0
 // @description  InfoCompte script for OGame
 // @author       Vulca, benneb & now The Stubbs
 // @license      MIT
@@ -13,11 +13,11 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @run-at       document-idle
-// @mood         https://www.youtube.com/watch?v=FsfrsLxt0l8
+// @mood         https://www.youtube.com/watch?v=M4Mcl_Q9ONE
 // ==/UserScript==
 
 const playerId = document.querySelector('[name=ogame-player-id]').content;
-const version = 8;
+const version = 12;
 const key = `${ playerId }.${ version }`;
 
 function get$a() {
@@ -87,7 +87,7 @@ const translations = {
     213: 'Destroyer',
     214: 'Deathstar',
     215: 'Battlecruiser',
-    217: 'Crawlers',
+    217: 'Crawler',
     218: 'Reaper',
     219: 'Pathfinder',
     401: 'Rocket launcher',
@@ -310,7 +310,6 @@ const translations = {
     update: 'Update',
     used: 'used',
     useCompactNumbers: 'Use compact numbers',
-    useMaximumCrawlers: 'Use the max. crawlers',
     useResourceBoosters: 'Use resource boosters',
     warriorAllicanceClass: 'Warrior',
     warriorPlayerClass: 'General',
@@ -592,7 +591,6 @@ const translations = {
     update: "Mettre à jour",
     used: "utilisées",
     useCompactNumbers: "Utiliser les nombres abrégés",
-    useMaximumCrawlers: "Utiliser le max. de foreuses",
     useResourceBoosters: "Utiliser les boosters de ressources",
     warriorAllicanceClass: "Guerrier",
     warriorPlayerClass: "Général",
@@ -600,6 +598,287 @@ const translations = {
     whenUpgraded: "place(s) quand terminé",
     with: "avec",
     years: "années"
+  },
+  de: {
+    1: 'Metallmine',
+    2: 'Kristallmine',
+    3: 'Deuterium-Synthetisierer',
+    4: 'Solarkraftwerk',
+    12: 'Fusionskraftwerk',
+    14: 'Roboterfabrik',
+    15: 'Nanitenfabrik',
+    21: 'Raumschiffswerft',
+    22: 'Metallspeicher',
+    23: 'Kristallspeicher',
+    24: 'Deuteriumtank',
+    31: 'Forschungslabor',
+    33: 'Terraformer',
+    34: 'Allianzdepot',
+    36: 'Raumdock',
+    41: 'Mondbasis',
+    42: 'Sensorphalanx',
+    43: 'Sprungtor',
+    44: 'Raketensilo',
+    106: 'Spionagetechnik',
+    108: 'Computertechnik',
+    109: 'Waffentechnik',
+    110: 'Schildtechnik',
+    111: 'Raumschiffpanzerung',
+    113: 'Energietechnik',
+    114: 'Hyperraumtechnik',
+    115: 'Verbrennungstriebwerk',
+    117: 'Impulstriebwerk',
+    118: 'Hyperraumantrieb',
+    120: 'Lasertechnik',
+    121: 'Ionentechnik',
+    122: 'Plasmatechnik',
+    123: 'Intergalaktisches Forschungsnetzwerk',
+    124: 'Astrophysik',
+    199: 'Gravitonforschung',
+    202: 'Kleiner Transporter',
+    203: 'Großer Transporter',
+    204: 'Leichter Jäger',
+    205: 'Schwerer Jäger',
+    206: 'Kreuzer',
+    207: 'Schlachtschiff',
+    208: 'Kolonieschiff',
+    209: 'Recycler',
+    210: 'Spionagesonde',
+    211: 'Bomber',
+    212: 'Solarsatellit',
+    213: 'Zerstörer',
+    214: 'Todesstern',
+    215: 'Schlachtkreuzer',
+    217: 'Crawler',
+    218: 'Reaper',
+    219: 'Pathfinder',
+    401: 'Raketenwerfer',
+    402: 'Leichtes Lasergeschütz',
+    403: 'Schweres Lasergeschütz',
+    404: 'Gaußkanone',
+    405: 'Ionengeschütz',
+    406: 'Plasmawerfer',
+    407: 'Kleine Schildkuppel',
+    408: 'Große Schildkuppel',
+    502: 'Abfangrakete',
+    503: 'Interplanetarrakete',
+    11_101: 'Wohnsektor',
+    11_102: 'Biosphären-Farm',
+    11_103: 'Forschungszentrum',
+    11_104: 'Akademie der Wissenschaften',
+    11_105: 'Neuro-Kalibrierungszentrum',
+    11_106: 'Hochenergie-Schmelze',
+    11_107: 'Nahrungsspeicher',
+    11_108: 'Fusionsbetriebene Förderung',
+    11_109: 'Skyscraper',
+    11_110: 'Biotech-Labor',
+    11_111: 'Metropolis',
+    11_112: 'Planetar-Schild',
+    11_201: 'Intergalaktische Botschafter',
+    11_202: 'Hochleistungs-Extraktoren',
+    11_203: 'Fusionstriebwerke',
+    11_204: 'Tarnfeld-Generator',
+    11_205: 'Orbital-Versteck',
+    11_206: 'Forschungs-KI',
+    11_207: 'Hochleistungs-Terraformer',
+    11_208: 'Verbesserte Förderungstechnologien',
+    11_209: 'Leichter Jäger Mk II',
+    11_210: 'Kreuzer Mk II',
+    11_211: 'Verbesserte Labortechnik',
+    11_212: 'Plasma-Terraformer',
+    11_213: 'Niedrigtemperatur-Triebwerke',
+    11_214: 'Bomber Mk II',
+    11_215: 'Zerstörer Mk II',
+    11_216: 'Schlachtkreuzer Mk II',
+    11_217: 'Roboter-Assistenten',
+    11_218: 'Supercomputer',
+    12_101: 'Meditationsenklave',
+    12_102: 'Kristallzucht',
+    12_103: 'Runentechnologikum',
+    12_104: 'Runenschmiede',
+    12_105: 'Oriktorium',
+    12_106: 'Magma-Schmelze',
+    12_107: 'Disruptionskammer',
+    12_108: 'Felsenmonument',
+    12_109: 'Kristall-Raffinerie',
+    12_110: 'Deuterium-Syntonisierer',
+    12_111: 'Mineral-Forschungszentrum',
+    12_112: 'Hochleistungs-Verwertungsanlage',
+    12_201: 'Vulkanische Batterien',
+    12_202: 'Akustische Sondierung',
+    12_203: 'Hochenergie-Pumpsysteme',
+    12_204: 'Laderaum-Erweiterung (Zivile Schiffe)',
+    12_205: 'Magmabetriebene Förderung',
+    12_206: 'Geothermie-Kraftwerke',
+    12_207: 'Tiefensondierung',
+    12_208: 'Ionenkristall-Verstärkung (Schwerer Jäger)',
+    12_209: 'Verbesserter Stellarator',
+    12_210: 'Gehärtete Diamant-Bohrköpfe',
+    12_211: 'Seismische Abbautechnologien',
+    12_212: 'Magmabetriebenes Pumpsystem',
+    12_213: 'Ionenkristall-Module',
+    12_214: 'Optimierte Silo-Bauweise',
+    12_215: 'Diamant-Energietransmitter',
+    12_216: 'Obsidian-Schildverstärkung',
+    12_217: 'Runenschilde',
+    12_218: 'Rocktal-Kollektorverstärkung',
+    13_101: 'Fertigungsstraße',
+    13_102: 'Fusionszellen-Fabrik',
+    13_103: 'Robotik-Forschungszentrum',
+    13_104: 'Update-Netzwerk',
+    13_105: 'Quanten-Computerzentrum',
+    13_106: 'Automatisiertes Montagezentrum',
+    13_107: 'Hochleistungs-Transformator',
+    13_108: 'Mikrochip-Fertigungsstraße',
+    13_109: 'Fließband-Montagehalle',
+    13_110: 'Hochleistungs-Synthetisierer',
+    13_111: 'Chip-Massenproduktion',
+    13_112: 'Nano-Reparaturbots',
+    13_201: 'Katalysator-Technik',
+    13_202: 'Plasma-Antrieb',
+    13_203: 'Effizienz-Modul',
+    13_204: 'Depot-KI',
+    13_205: 'Generalüberholung (Leichter Jäger)',
+    13_206: 'Automatisierte Förderstraßen',
+    13_207: 'Verbesserte Drohnen-KI',
+    13_208: 'Experimentelle Wiederaufbereitungstechnik',
+    13_209: 'Generalüberholung (Kreuzer)',
+    13_210: 'Slingshot-Autopilot',
+    13_211: 'Hochtemperatur-Supraleiter',
+    13_212: 'Generalüberholung (Schlachtschiff)',
+    13_213: 'Künstliche Schwarmintelligenz',
+    13_214: 'Generalüberholung (Schlachtkreuzer)',
+    13_215: 'Generalüberholung (Bomber)',
+    13_216: 'Generalüberholung (Zerstörer)',
+    13_217: 'Experimentelle Waffentechnik',
+    13_218: 'Mecha-Generalverstärkung',
+    14_101: 'Refugium',
+    14_102: 'Antimaterie-Kondensator ',
+    14_103: 'Vortexkammer',
+    14_104: 'Hallen der Erkenntnis',
+    14_105: 'Forum der Transzendenz',
+    14_106: 'Antimaterie-Konvektor',
+    14_107: 'Klonlabor',
+    14_108: 'Chrysalis-Akzelerator',
+    14_109: 'Bio-Modifikator',
+    14_110: 'Psionischer Modulator',
+    14_111: 'Schiffs-Fabrikationshalle',
+    14_112: 'Supra-Refraktor',
+    14_201: 'Wärme-Rückgewinnung',
+    14_202: 'Sulfid-Prozesstechnik',
+    14_203: 'Psionisches Netzwerk',
+    14_204: 'Telekinese-Traktorstrahl',
+    14_205: 'Verbesserte Sensortechnik',
+    14_206: 'Neuromodaler Komprimator',
+    14_207: 'Neuro-Interface',
+    14_208: 'Superglobales Analysenetzwerk',
+    14_209: 'Übertaktung (Schwerer Jäger)',
+    14_210: 'Telekinetisches Schubsystem',
+    14_211: 'Sechster Sinn',
+    14_212: 'Psycho-Harmonisierer',
+    14_213: 'Effiziente Schwarmintelligenz',
+    14_214: 'Übertaktung (Großer Transporter)',
+    14_215: 'Gravitationssensoren',
+    14_216: 'Übertaktung (Schlachtschiff)',
+    14_217: 'Psionische Schutzmatrix',
+    14_218: 'Kaelesh-Entdeckerverstärkung',
+    accountOverview: "Account Übersicht",
+    alliance: 'Allianz',
+    amortizations: 'Amortisation',
+    amortizationsSettings: 'Amortisationseinstellungen',
+    amortizationsWarning: 'Benötigte Zeit zur Fertigstellung',
+    at: 'um',
+    basicIncome: 'Grundeinkommen',
+    buildings: 'Gebäude',
+    classes: 'Klasse',
+    clearAllData: "Alle Daten löschen",
+    colors: 'Farben',
+    costs: 'Kosten',
+    crystal: 'Kristall',
+    dailyProductions: 'Tägliche Produktion',
+    days: 'Tage',
+    defences: 'Verteidigung',
+    deuterium: 'Deuterium',
+    deuteriumEquivalent: 'Deuterium equivalent',
+    empire: 'Imperium',
+    empireOf: "Imperium von",
+    explorerPlayerClass: 'Entdecker',
+    exports: 'Exporte',
+    exportNotification: 'Export in die Zwischenablage kopiert',
+    gameforgeAffiliateLink: 'Gameforge Affiliate-Link',
+    generatedOn: 'Erstellt am',
+    highscore: 'Highscore',
+    hours: 'Stunden',
+    humans: 'Menschen',
+    ifDestroyed: 'Position(en) wenn zerstört',
+    image: 'Bild',
+    indestructibles: 'Unzustörbares',
+    inProduction: 'In Produktion',
+    kaelesh: 'Kaelesh',
+    kofi: 'Buy me a coffee',
+    level: 'Stufe',
+    levels: 'Stufen',
+    lifeform: 'Lebensform',
+    lifeformBuildings: 'Lebensform Gebäude',
+    lifeformLevels: 'Lebensform Stufe',
+    lifeformResearches: 'Lebensform Erforschungen',
+    lifeformSettings: "Lebensform Einstellungen",
+    lifeforms: 'Lebensformen',
+    maximum: 'Maximum',
+    maximumTemperatures: 'Maximaltemperatur',
+    mechas: 'Mechas',
+    menuTitle: 'Script Einstellungen',
+    metal: 'Metall',
+    minerPlayerClass: 'Kollektor',
+    mines: 'Minen',
+    miscellaneous: 'Verschiedenes',
+    months: 'Monate',
+    moon: 'Mond',
+    moons: 'Monde',
+    moonBuildings: 'Mond Gebäude',
+    moonDefences: 'Mond Verteidigung',
+    neededData: 'Benötigte Daten',
+    on: 'auf',
+    placeAccountOverviewOnTop: 'Account Übersicht oben anzeigen',
+    plainText: 'Reiner Text',
+    planet: 'Planet',
+    planetBuildings: 'Planeten Gebäude',
+    planetDefences: 'Planeten Verteidigung',
+    planetFields: 'Planet Felder',
+    planets: 'Planeten',
+    planetsPointsRepartition: 'Planeten Punkteverteilung',
+    planetsToIgnore: 'Planeten ignorieren',
+    points: 'Punkte',
+    pointsRepartition: 'Punkteverteilung',
+    premium: 'Items & Offiziere',
+    production: 'Produktion',
+    productionOf: "Produktion von",
+    productions: 'Produktionen',
+    rates: 'Handelskurs',
+    researcherAllicanceClass: 'Entdecker',
+    researches: 'Forschungen',
+    resources: 'Rohstoffe',
+    resourceSettings: 'Versorgungseinstellungen',
+    rocktal: 'Rock’tal',
+    settings: 'Einstellungen',
+    ships: 'Schiffe',
+    shipyards: 'Raumschiffswerft',
+    standardUnit: 'Standardeinheit',
+    supportLink: 'https://forum.origin.ogame.gameforge.com/forum/thread/151-infocompte/',
+    technologies: 'Technologien',
+    textWithBBCode: 'Text mit BBCode',
+    total: 'Summe',
+    traderAllicanceClass: 'Händler',
+    update: 'Update',
+    used: 'benutzt',
+    useCompactNumbers: 'Benutze kompakte Zahlen',
+    useResourceBoosters: 'Benutze Rohstoff-Booster',
+    warriorAllicanceClass: 'Krieger',
+    warriorPlayerClass: 'General',
+    weeks: 'Wochen',
+    whenUpgraded: 'Position(en) wenn abgeschlossen',
+    with: 'mit',
+    years: 'Jahre'
   }
 };
 
@@ -722,14 +1001,14 @@ const lifeforms$1 = {
     rocktal: [12_101, 12_102, 12_103, 12_104, 12_105, 12_106, 12_107, 12_108, 12_109, 12_110, 12_111, 12_112],
     mechas: [13_101, 13_102, 13_103, 13_104, 13_105, 13_106, 13_107, 13_108, 13_109, 13_110, 13_111, 13_112],
     kaelesh: [14_101, 14_102, 14_103, 14_104, 14_105, 14_106, 14_107, 14_108, 14_109, 14_110, 14_111, 14_112],
-    null: []
+    none: []
   },
   researches: {
     humans: [11_201, 11_202, 11_203, 11_204, 11_205, 11_206, 11_207, 11_208, 11_209, 11_210, 11_211, 11_212, 11_213, 11_214, 11_215, 11_216, 11_217, 11_218],
     rocktal: [12_201, 12_202, 12_203, 12_204, 12_205, 12_206, 12_207, 12_208, 12_209, 12_210, 12_211, 12_212, 12_213, 12_214, 12_215, 12_216, 12_217, 12_218],
     mechas: [13_201, 13_202, 13_203, 13_204, 13_205, 13_206, 13_207, 13_208, 13_209, 13_210, 13_211, 13_212, 13_213, 13_214, 13_215, 13_216, 13_217, 13_218],
     kaelesh: [14_201, 14_202, 14_203, 14_204, 14_205, 14_206, 14_207, 14_208, 14_209, 14_210, 14_211, 14_212, 14_213, 14_214, 14_215, 14_216, 14_217, 14_218],
-    null: []
+    none: []
   }
 };
 const researches = {
@@ -974,7 +1253,7 @@ const lifeforms = [
   'mechas',
   'kaelesh'
 ];
-const miniatures = {
+const miniatures$1 = {
   '60555c3c87b9eb3b5ddf76780b5712': 202,
   '9e24203ce8e9723008272d51786780': 202,
   'fdbcc505474e3e108d10a3ed4a19f4': 203,
@@ -1102,7 +1381,7 @@ function getLifeforms() {
       const icon = element.querySelector('.lifeform-item-icon');
       const p = element.querySelector('.lifeform-item-wrapper p:nth-last-of-type(2)');
       const key = getLifeformKey(icon.classList[1]);
-      const values = p.textContent.match(/\d+/g);
+      const values = p.textContent.match(/\d+/g) || [100, 4_545_000, 4_545_000]; // Lifeform level 100 management
       result[key] = {
         level: parseInt(values[0]),
         xp: {
@@ -1185,17 +1464,12 @@ function getBodyLifeform() {
 }
 function getBodyLifeformSpecies() {
   if (document.querySelector('#lifeform')) {
-    let result = null;
     for (const key of ['lifeform1', 'lifeform2', 'lifeform3', 'lifeform4']) {
       if (document.querySelector(`#lifeform .${ key }`)) {
-        result = key;
-        break;
+        return getLifeformKey(key);
       }
     }
-    if (result) {
-      result = getLifeformKey(result);
-    }
-    return result;
+    return 'none';
   }
 }
 function getBodyLifeformResearches() {
@@ -1309,9 +1583,10 @@ function getBodyProductionValues(element) {
   };
 }
 function getBodyProductionValue(element) {
-  // after update 11.15: const value = element.querySelector('span').dataset.tooltipTitle;
-  const span = element.querySelector('span');
-  const value = span.title || span.dataset.tooltipTitle || span.dataset.title;
+  // before update 11.15:
+  // const span = element.querySelector('span');
+  // const value = span.title || span.dataset.tooltipTitle || span.dataset.title;
+  const value = element.querySelector('span').dataset.tooltipTitle;
   return Types.getNumber(value);
 }
 function getBodyProductionFactor(element) {
@@ -1362,7 +1637,7 @@ function getUnitUpgrade(element, id) {
   let result = 0;
   for (const element of document.querySelectorAll(':is(#productionboxshipyardcomponent, #productionboxextendedshipyardcomponent) :is(.first, .queue td)')) {
     const key = element.querySelector('img').src.substring(32, 62);
-    if (miniatures[key] === id) {
+    if (miniatures$1[key] === id) {
       result += parseInt(element.textContent);
     }
   }
@@ -1417,8 +1692,12 @@ function getPlayersHighscore() {
   for (const element of document.querySelectorAll('#ranks tbody tr')) {
     const position = element.querySelector('.position');
     const score = element.querySelector('.score');
-    const key = parseInt(position.textContent);
     const value = Types.getNumber(score.firstChild.textContent);
+    let key = parseInt(position.textContent);
+    if (!key) {
+      // used for top three places management where there is no text
+      key = Array.prototype.indexOf.call(element.parentNode.children, element) + 1;
+    }
     result[key] = value;
   }
   return result;
@@ -1486,11 +1765,12 @@ function setScript(data) {
     data.script = {
       amortizations: {
         form: {
-          mines: true,
+          metalMine: true,
+          crystalMine: true,
+          deuteriumMine: true,
           lifeformBuildings: true,
           lifeformResearches: true,
-          plasma: true,
-          useMaximumCrawlers: true
+          plasma: true
         }
       },
       collapsibles: {
@@ -1546,7 +1826,7 @@ function setLifeforms(data) {
   const { player, script } = data;
   if (player.lifeforms === undefined) {
     const lifeforms = player.lifeforms = {};
-    for (const id of ['humans', 'rocktal', 'mechas', 'kaelesh', null]) {
+    for (const id of ['humans', 'rocktal', 'mechas', 'kaelesh', 'none']) {
       lifeforms[id] = {
         level: 0,
         xp: {
@@ -1883,18 +2163,8 @@ var Needed$1 = {
 };
 
 class Resources {
-  static getPoints(resources) {
-    return (resources.metal + resources.crystal + resources.deuterium) * .001;
-  }
   static getSU(resources, rates) {
     return (resources.metal / rates.metal + resources.crystal / rates.crystal + resources.deuterium) * rates[rates.unit];
-  }
-  static getTotal(resources, rates) {
-    if (rates.unit === 'points') {
-      return this.getPoints(resources);
-    } else {
-      return this.getSU(resources, rates);
-    }
   }
   constructor(...args) {
     if (args.length === 3) {
@@ -1950,13 +2220,6 @@ class Resources {
   }
   toSU(rates) {
     return (this.metal / rates.metal + this.crystal / rates.crystal + this.deuterium) * rates[rates.unit];
-  }
-  toTotal(rates) {
-    if (rates.unit === 'points') {
-      return this.toPoints();
-    } else {
-      return this.toSU(rates);
-    }
   }
 }
 
@@ -3933,7 +4196,7 @@ const Mines$1 = {
       const index = Math.min(3, Math.abs(position - 8));
       const bonus = Mines$1.metal.bonuses[index];
       const result = new Resources();
-      result.metal = Math.trunc(30 * upgraded * 1.1 ** upgraded * bonus * speed);
+      result.metal = Math.trunc(30 * speed * upgraded * 1.1 ** upgraded * bonus);
       return result;
     }
   },
@@ -3946,7 +4209,7 @@ const Mines$1 = {
       const index = Math.min(3, position - 1);
       const bonus = Mines$1.crystal.bonuses[index];
       const result = new Resources();
-      result.crystal = Math.trunc(20 * upgraded * 1.1 ** upgraded * bonus * speed);
+      result.crystal = Math.trunc(20 * speed * upgraded * 1.1 ** upgraded * bonus);
       return result;
     }
   },
@@ -3957,7 +4220,7 @@ const Mines$1 = {
       const { speed } = data.universe;
       const bonus = 1.44 - .004 * temperature;
       const result = new Resources();
-      result.deuterium = Math.trunc(10 * upgraded * 1.1 ** upgraded * bonus * speed);
+      result.deuterium = Math.trunc(10 * speed * upgraded * 1.1 ** upgraded * bonus);
       return result;
     }
   },
@@ -4071,15 +4334,14 @@ function getProduction$3(data, coordinates, bonuses) {
   const { planet } = position;
   const { lifeform, boosters } = planet;
   const { species } = lifeform;
-  const { useMaximumCrawlers, useResourceBoosters } = script.amortizations.form;
-  const crawlersGetCount = useMaximumCrawlers && Productions$1.Crawlers.getMaximumCount || Productions$1.Crawlers.getCurrentCount;
+  const { useResourceBoosters } = script.amortizations.form;
   const productions = Productions$1.Mines.get(data, planet);
   const result = new Resources();
   result.add(
     productions,
     Productions$1.Lifeforms.get(productions, bonuses.buildings[coordinates], IDs.lifeforms.buildings[species]),
     Productions$1.Lifeforms.get(productions, bonuses.researches, IDs.resources.increasers),
-    Productions$1.Crawlers.get(data, planet, productions, bonuses.researches, crawlersGetCount(data, planet, bonuses.researches)),
+    Productions$1.Crawlers.get(data, planet, productions, bonuses.researches, Productions$1.Crawlers.getCurrentCount(data, planet, bonuses.researches)),
     Productions$1.Plasma.get(data, productions),
     Productions$1.Officers.get(data, productions),
     Productions$1.Classes.get(data, productions, bonuses.researches)
@@ -4105,7 +4367,7 @@ function get$6(data, coordinates, bonuses, reductions, id) {
   const level = technology.upgraded;
   const cost = getCost$2(data, coordinates, reductions, id);
   const production = getProduction$3(data, coordinates, bonuses).subtract(initialProduction);
-  const amortization = cost.toTotal(rates) / production.toTotal(rates);
+  const amortization = cost.toSU(rates) / production.toSU(rates);
   // restore initial values & result return
   technology.value = initialValue;
   technology.upgrade = initialUpgrade;
@@ -4153,7 +4415,7 @@ const Buildings$1 = {
     const level = technology.upgraded;
     const cost = Buildings$1.getCost(data, coordinates, reductions, id);
     const production = Buildings$1.getProduction(data, coordinates, bonuses, id).subtract(initialProduction);
-    const amortization = cost.toTotal(rates) / production.toTotal(rates);
+    const amortization = cost.toSU(rates) / production.toSU(rates);
     // restore initial values & result return
     technology.value = initialValue;
     technology.upgrade = initialUpgrade;
@@ -4203,7 +4465,7 @@ const Researches$1 = {
     const level = technology.upgraded;
     const cost = Researches$1.getCost(data, coordinates, reductions, id);
     const production = Researches$1.getProduction(data, coordinates, bonuses, id).subtract(initialProduction);
-    const amortization = cost.toTotal(rates) / production.toTotal(rates);
+    const amortization = cost.toSU(rates) / production.toSU(rates);
     // restore initial values & result return
     technology.value = initialValue;
     technology.upgrade = initialUpgrade;
@@ -4228,8 +4490,7 @@ var Increasers = {
 function getProduction$2(data, bonuses) {
   const { player, script } = data;
   const { positions, researches } = player;
-  const { useMaximumCrawlers, useResourceBoosters, planetsToIgnoreCount } = script.amortizations.form;
-  const crawlersGetCount = useMaximumCrawlers && Productions$1.Crawlers.getMaximumCount || Productions$1.Crawlers.getCurrentCount;
+  const { useResourceBoosters, planetsToIgnoreCount } = script.amortizations.form;
   const result = new Resources();
   for (const coordinates in positions) {
     const position = positions[coordinates];
@@ -4238,7 +4499,7 @@ function getProduction$2(data, bonuses) {
     const productions = Productions$1.Mines.get(data, planet);
     result.add(
       Productions$1.Lifeforms.get(productions, bonuses.researches, IDs.resources.increasers),
-      Productions$1.Crawlers.get(data, planet, productions, bonuses.researches, crawlersGetCount(data, planet, bonuses.researches)),
+      Productions$1.Crawlers.get(data, planet, productions, bonuses.researches, Productions$1.Crawlers.getCurrentCount(data, planet, bonuses.researches)),
       Productions$1.Classes.get(data, productions, bonuses.researches)
     );
     if (boosters && useResourceBoosters) {
@@ -4272,7 +4533,7 @@ const Buildings = {
     const level = technology.upgraded;
     const cost = Buildings.getCost(data, coordinates, reductions, id);
     const production = getProduction$2(data, bonuses).subtract(initialProduction);
-    const amortization = cost.toTotal(rates) / production.toTotal(rates);
+    const amortization = cost.toSU(rates) / production.toSU(rates);
     // restore initial values & result return
     technology.value = initialValue;
     technology.upgrade = initialUpgrade;
@@ -4313,7 +4574,7 @@ const Researches = {
     const level = technology.upgraded;
     const cost = Researches.getCost(data, coordinates, reductions, id);
     const production = getProduction$2(data, bonuses).subtract(initialProduction);
-    const amortization = cost.toTotal(rates) / production.toTotal(rates);
+    const amortization = cost.toSU(rates) / production.toSU(rates);
     // restore initial values & result return
     technology.value = initialValue;
     technology.upgrade = initialUpgrade;
@@ -4367,7 +4628,7 @@ function get$5(data, reductions) {
   const level = technology.upgraded;
   const cost = getCost$1(data, reductions);
   const production = getProduction$1(data).subtract(initialProduction);
-  const amortization = cost.toTotal(rates) / production.toTotal(rates);
+  const amortization = cost.toSU(rates) / production.toSU(rates);
   // restore initial values & result return
   technology.value = initialValue;
   technology.upgrade = initialUpgrade;
@@ -4408,8 +4669,7 @@ function getCost(data, reductions) {
 function getProduction(data, bonuses) {
   const { player, script } = data;
   const { positions, researches } = player;
-  const { useMaximumCrawlers, useResourceBoosters, planetsToIgnoreCount } = script.amortizations.form;
-  const crawlersGetCount = useMaximumCrawlers && Productions$1.Crawlers.getMaximumCount || Productions$1.Crawlers.getCurrentCount;
+  const { useResourceBoosters, planetsToIgnoreCount } = script.amortizations.form;
   const result = new Resources();
   for (const coordinates in positions) {
     const position = positions[coordinates];
@@ -4422,7 +4682,7 @@ function getProduction(data, bonuses) {
       Productions$1.Basic.get(data),
       Productions$1.Lifeforms.get(productions, bonuses.buildings[coordinates], IDs.lifeforms.buildings[species]),
       Productions$1.Lifeforms.get(productions, bonuses.researches, IDs.resources.increasers),
-      Productions$1.Crawlers.get(data, planet, productions, bonuses.researches, crawlersGetCount(data, planet, bonuses.researches)),
+      Productions$1.Crawlers.get(data, planet, productions, bonuses.researches, Productions$1.Crawlers.getCurrentCount(data, planet, bonuses.researches)),
       Productions$1.Plasma.get(data, productions),
       Productions$1.Officers.get(data, productions),
       Productions$1.Classes.get(data, productions, bonuses.researches)
@@ -4451,7 +4711,7 @@ function get$4(data, bonuses, reductions) {
   const level = `${ technology.upgraded - 1 }/${ technology.upgraded }`;
   const cost = getCost(data, reductions);
   const production = getProduction(data, bonuses).subtract(initialProduction);
-  const amortization = cost.toTotal(rates) / production.toTotal(rates);
+  const amortization = cost.toSU(rates) / production.toSU(rates);
   // restore initial values & result return
   technology.value = initialValue;
   technology.upgrade = initialUpgrade;
@@ -4502,10 +4762,14 @@ function getAll(data) {
     const position = positions[coordinates];
     const { lifeform } = position.planet;
     const { species, researches } = lifeform;
-    if (form.mines) {
-      for (const id of IDs.mines.all) {
-       result.push(Technologies.Mines.get(data, coordinates, bonuses, reductions, id));
-      }
+    if (form.metalMine) {
+      result.push(Technologies.Mines.get(data, coordinates, bonuses, reductions, 1));
+    }
+    if (form.crystalMine) {
+      result.push(Technologies.Mines.get(data, coordinates, bonuses, reductions, 2));
+    }
+    if (form.deuteriumMine) {
+      result.push(Technologies.Mines.get(data, coordinates, bonuses, reductions, 3));
     }
     if (form.lifeformBuildings) {
       for (const id of IDs.lifeforms.buildings[species]) {
@@ -4565,82 +4829,97 @@ var Amortizations$2 = {
   get: get$3
 };
 
+const miniatures = {
+  1: 'gf1.geo.gfsrv.net/cdnf0/ab350d9a3da1240ebe36c44fe3e26a',
+  2: 'gf2.geo.gfsrv.net/cdn13/fc0b3cbabb11e6835d15a251c93dea',
+  3: 'gf2.geo.gfsrv.net/cdnd2/d2c517937cf0726783e1f2f89ce228',
+  122: 'gf1.geo.gfsrv.net/cdn6b/60caed2c09b674de10f8315e32c886',
+  124: 'gf1.geo.gfsrv.net/cdnf4/29c43039fb192e2af82c78c877c85d'
+};
+
 function getHTML$7(data) {
   return `<div id="ic_amortizations-panel" class="ic_panel" data-state="collapsed">
-            <h3 class="ic_panel_title"><span></span>${ Translation.amortizations }</h3>
+            <h3 class="ic_panel_title"><span></span>${Translation.amortizations}</h3>
             <div class="ic_panel_main">
               <form class="ic_form">
                 <fieldset>
-                  <button type="button" id="ic_amortizations-panel_settings-button" class="btn_blue ic_button" >${ Translation.settings }</button>
-                  <button type="button" id="ic_amortizations-panel_update-button" class="btn_blue ic_button tooltipRight" title="⚠ ${ Translation.amortizationsWarning }">${ Translation.update }</button>
+                  <button type="button" id="ic_amortizations-panel_settings-button" class="btn_blue ic_button" >${Translation.settings}</button>
+                  <button type="button" id="ic_amortizations-panel_update-button" class="btn_blue ic_button tooltipRight" title="⚠ ${Translation.amortizationsWarning}">${Translation.update}</button>
                 </fieldset>
               </form>
-              <table class="ic_table"><tbody>${ getTableHTML(data) }</tbody></table>
+              <table class="ic_table"><tbody>${getTableHTML(data)}</tbody></table>
             </div>
           </div>`;
 }
 function getTableHTML(data) {
-  const { positions } = data.player;
-  const { amortizations, numbers, rates } = data.script;
-  const { table } = amortizations;
+  const {positions} = data.player;
+  const {amortizations, numbers, rates} = data.script;
+  const {table} = amortizations;
   let result = '';
   if (table) {
     let i = 0;
-    for (const { coordinates, id, level, cost, production, amortization } of table) {
-      const isObsolete = coordinates && !positions[coordinates]; // for decolonized/destroyed cases
-      if (!isObsolete) { 
+    for (const {coordinates, id, level, cost, production, amortization} of table) {
+      const isObsolete = coordinates && !positions[coordinates];
+      if (!isObsolete) {
         result += `<tr>
-                    <td>${ ++i }.</td>
+                    <td>${++i}.</td>
                     <td>
                       ${(function() {
                         if (coordinates) {
-                          return `<div>${ positions[coordinates].planet.name }</div>
-                                  <div>${ coordinates }</div>`;
-                        } else {
-                          return `<div>${ Translation.researches }</div>`;
-                        }
-                      })()}
-                    </td>
-                    <td><div>${ getTechnologyName(id) }</div><div>${ getTechnologyLevel(level) }</div></td>
-                    <td>
-                      <div>${ Shared.getNumberHTML(cost.metal, numbers) }</div>
-                      <div>${ Shared.getNumberHTML(cost.crystal, numbers) }</div>
-                      <div>${ Shared.getNumberHTML(cost.deuterium, numbers) }</div>
-                      <div>${ Shared.getNumberHTML(Resources.getTotal(cost, rates)) }</div>
+                          return `<div>${positions[coordinates].planet.name}</div>
+                                  <div>${coordinates}</div>`;
+                      } else {
+                          return `<div>${Translation.researches}</div>`;
+                      }
+                    })()}
                     </td>
                     <td>
-                      <div>${ Shared.getNumberHTML(production.metal, numbers) }</div>
-                      <div>${ Shared.getNumberHTML(production.crystal, numbers) }</div>
-                      <div>${ Shared.getNumberHTML(production.deuterium, numbers) }</div>
-                      <div>${ Shared.getNumberHTML(Resources.getTotal(production, rates)) }</div>
+                      ${getTechnologyPicture(id)}
+                      <div>
+                        <div>${Translation[id]}</div>
+                        <div>${getTechnologyLevel(level)}</div>
+                      </div>
                     </td>
-                    <td>${ Types.getDurationString(amortization) }</td>
+                    <td>
+                      <div>${Shared.getNumberHTML(cost.metal, numbers)}</div>
+                      <div>${Shared.getNumberHTML(cost.crystal, numbers)}</div>
+                      <div>${Shared.getNumberHTML(cost.deuterium, numbers)}</div>
+                      <div>${Shared.getNumberHTML(Resources.getSU(cost, rates))}</div>
+                    </td>
+                    <td>
+                      <div>${Shared.getNumberHTML(production.metal, numbers)}</div>
+                      <div>${Shared.getNumberHTML(production.crystal, numbers)}</div>
+                      <div>${Shared.getNumberHTML(production.deuterium, numbers)}</div>
+                      <div>${Shared.getNumberHTML(Resources.getSU(production, rates))}</div>
+                    </td>
+                    <td>${Types.getDurationString(amortization)}</td>
                   </tr>`;
-      }
     }
   }
+}
   if (result) {
-    result = `<tr><th></th><th></th><th></th><th>${ Translation.costs }</th><th>${ Translation.productions }</th><th>${ Translation.amortizations }</th></tr>
-              ${ result }`;
-  }
+    result = `<tr><th></th><th></th><th></th><th>${Translation.costs}</th><th>${Translation.productions}</th><th>${Translation.amortizations}</th></tr>
+              ${result}`;
+}
   return result;
 }
-function getTechnologyName(id) {
-  let result = Translation[id];
-  if(IDs.lifeforms.researches.all.includes(id)) {
-    result += ` ${ getLifeformResearchAbbreviation(id) }`;
+function getTechnologyPicture(id) {
+  if (IDs.lifeforms.all.includes(id)){
+    const abbr = IDs.lifeforms.researches.all.includes(id) ? `<span>${getLifeformResearchAbbreviation(id)}</span>` : '';
+    return `<div class="queuePic lifeformqueue lifeformTech${id}">${abbr}</div>`;
+  } else {
+    return `<img class="queuePic" width="40" height="40" src="https://${miniatures[id]}.jpg"></img>`;
   }
-  return result;
 }
 function getLifeformResearchAbbreviation(id) {
   const root = id % 1_000 - 200;
   const tier = Math.ceil(root / 6);
   const slot = root % 6 || 6;
-  return `(${ tier }-${ slot })`;
+  return `${tier}.${slot}`;
 }
 function getTechnologyLevel(value) {
   const prefix = typeof value === 'number' && Translation.level || Translation.levels;
-  return `${ prefix } ${ value }`; 
+  return `${prefix} ${value}`; 
 }
 function setEvents$4() {
   setUpdateEvent();
@@ -4692,11 +4971,13 @@ function getLifeformLevelsSection(data) {
   const { lifeforms } = data.player;
   let result = '';
   for(const key in lifeforms) {
-    const lifeform = lifeforms[key];
-    const level = getColored$2(lifeform.level, Colors.main);
-    const current = Types.getFullNumberString(lifeform.xp.current);
-    const maximum = Types.getFullNumberString(lifeform.xp.maximum);
-    result += `${ Translation[key] } : ${ level } · ${ current }/${ maximum } xp\n`;
+    if (key !== 'none') {
+      const lifeform = lifeforms[key];
+      const level = getColored$2(lifeform.level, Colors.main);
+      const current = Types.getFullNumberString(lifeform.xp.current);
+      const maximum = Types.getFullNumberString(lifeform.xp.maximum);
+      result += `${ Translation[key] } : ${ level } · ${ current }/${ maximum } xp\n`;
+    }
   }
   if (result) {
     const subtitle = getSectionTitle$1(Translation.lifeformLevels);
@@ -5356,8 +5637,8 @@ function getProductionsHTML(production, total, rates) {
   const dct = total.crystal * 24;
   const ddp = production.deuterium * 24;
   const ddt = total.deuterium * 24;
-  const dtp = Resources.getTotal(production, rates) * 24;
-  const dtt = Resources.getTotal(total, rates) * 24;
+  const dtp = Resources.getSU(production, rates) * 24;
+  const dtt = Resources.getSU(total, rates) * 24;
   return `<td><div>${ Shared.getNumberHTML(dmp) }</div><div>${ Types.getPercentString(dmp / dmt) }</div></td>
           <td><div>${ Shared.getNumberHTML(dcp) }</div><div>${ Types.getPercentString(dcp / dct) }</div></td>
           <td><div>${ Shared.getNumberHTML(ddp) }</div><div>${ Types.getPercentString(ddp / ddt) }</div></td>
@@ -5429,26 +5710,40 @@ function getHTML$1(data) {
             <form class="ic_form">
               <fieldset>
                 <legend>${ Translation.technologies }</legend>
-                <label>
-                  <input type="checkbox" value="mines" ${ form.mines && 'checked' || '' }>
-                  ${ Translation.mines }
-                </label>
-                <label>
-                  <input type="checkbox" value="lifeformBuildings" ${ form.lifeformBuildings && 'checked' || '' }>
-                  ${ Translation.lifeformBuildings }
-                </label>
-                <label>
-                  <input type="checkbox" value="lifeformResearches" ${ form.lifeformResearches && 'checked' || '' }>
-                  ${ Translation.lifeformResearches }
-                </label>
-                <label>
-                  <input type="checkbox" value="plasma" ${ form.plasma && 'checked' || '' }>
-                  ${ Translation[122] }
-                </label>
-                <label>
-                  <input type="checkbox" value="astrophysics" ${ form.astrophysics && 'checked' || '' }>
-                  ${ Translation[124] }
-                </label>
+                <fieldset>
+                  <label>
+                    <input type="checkbox" value="metalMine" ${ form.metalMine && 'checked' || '' }>
+                    ${ Translation[1] }
+                  </label>
+                  <label>
+                    <input type="checkbox" value="crystalMine" ${ form.crystalMine && 'checked' || '' }>
+                    ${ Translation[2] }
+                  </label>
+                  <label>
+                    <input type="checkbox" value="deuteriumMine" ${ form.deuteriumMine && 'checked' || '' }>
+                    ${ Translation[3] }
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <label>
+                    <input type="checkbox" value="lifeformBuildings" ${ form.lifeformBuildings && 'checked' || '' }>
+                    ${ Translation.lifeformBuildings }
+                  </label>
+                  <label>
+                    <input type="checkbox" value="lifeformResearches" ${ form.lifeformResearches && 'checked' || '' }>
+                    ${ Translation.lifeformResearches }
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <label>
+                    <input type="checkbox" value="plasma" ${ form.plasma && 'checked' || '' }>
+                    ${ Translation[122] }
+                  </label>
+                  <label>
+                    <input type="checkbox" value="astrophysics" ${ form.astrophysics && 'checked' || '' }>
+                    ${ Translation[124] }
+                  </label>
+                </fieldset>
               </fieldset>
               <fieldset>
                 <legend>${ Translation.planetsToIgnore }</legend>
@@ -5457,17 +5752,13 @@ function getHTML$1(data) {
                   let result = '';
                   for (const coordinates in positions) {
                     const { name } = positions[coordinates].planet;
-                    result += `<label><input type="checkbox" value="${ coordinates }" ${ form[coordinates] && 'checked' || '' }>${ name } [${ coordinates }]</label>`;
+                    result += `<label><input type="checkbox" value="${ coordinates }" ${ form[coordinates] && 'checked' || '' }>${ name } - ${ coordinates }</label>`;
                   }
                   return result;
                 })()}
               </fieldset>
               <fieldset>
                 <legend>${ Translation.miscellaneous }</legend>
-                  <label>
-                    <input type="checkbox" value="useMaximumCrawlers" ${ form.useMaximumCrawlers && 'checked' || '' }>
-                    ${ Translation.useMaximumCrawlers }
-                  </label>
                   <label>
                     <input type="checkbox" value="useResourceBoosters" ${ form.useResourceBoosters && 'checked' || '' }>
                     ${ Translation.useResourceBoosters }
@@ -5538,7 +5829,6 @@ function getHTML(data) {
                 <label><input type="radio" name="standardUnit" value="metal" ${ rates.unit === 'metal' && 'checked' || '' }>${ Translation.metal }</label>
                 <label><input type="radio" name="standardUnit" value="crystal" ${ rates.unit === 'crystal' && 'checked' || '' }>${ Translation.crystal }</label>
                 <label><input type="radio" name="standardUnit" value="deuterium" ${ rates.unit === 'deuterium' && 'checked' || '' }>${ Translation.deuterium }</label>
-                <label><input type="radio" name="standardUnit" value="points" ${ rates.unit === 'points' && 'checked' || '' }>${ Translation.points }</label>
               </fieldset>
               <fieldset>
                 <legend>${ Translation.miscellaneous }</legend>
@@ -5967,6 +6257,9 @@ function get(data) {
           #ic_productions-panel td:nth-child(4) {
             color: ${ colors.deuterium };
           }
+          #ic_amortizations-panel .ic_panel_main {
+            flex-direction: column;
+          }
           #ic_amortizations-panel form {
             flex-direction: column;
             gap: 8px;
@@ -5981,6 +6274,28 @@ function get(data) {
           #ic_amortizations-panel table {
             text-align: center;
           }
+          #ic_amortizations-panel td:nth-child(3) {
+            align-items: center;
+            display: flex;
+            gap: 8px;
+            height: 62px;
+            text-align: left;
+          }
+          #ic_amortizations-panel td:nth-child(3) > div:nth-child(1) {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+          #ic_amortizations-panel td:nth-child(3) > div:nth-child(1) span {
+            background: rgba(0, 0, 0, .5);
+            color: white;
+            padding: 4px 11px;
+          }
+          #ic_amortizations-panel td:nth-child(3) > div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+          }
           #ic_amortizations-panel td:nth-child(n + 4) div:first-child {
             color: ${ colors.metal };
           }
@@ -5990,8 +6305,12 @@ function get(data) {
           #ic_amortizations-panel td:nth-child(n + 4) div:nth-child(3) {
             color: ${ colors.deuterium };
           }
-          #ic_amortizations-panel .ic_panel_main {
-            flex-direction: column;
+          #ic_amortizations-panel .queuePic {
+            margin: 0;
+          }
+          #ic_amortizations-panel_settings fieldset:has(> fieldset) {
+            display: flex;
+            gap: 12px;
           }
           #ic_exports-panel .ic_panel_main {
             flex-direction: column;
@@ -6074,6 +6393,8 @@ var Interface = {
   init
 };
 
-const data = await Data.get();
-Interface.init(data);
-Storage.set(data);
+(async function() {
+  const data = await Data.get();
+  Interface.init(data);
+  Storage.set(data);
+})();
